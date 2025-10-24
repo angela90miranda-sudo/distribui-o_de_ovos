@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido de Ovos - Cliente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-yellow': '#FFC72C',
+              'brand-brown': '#654321',
+              'brand-cream': '#FDF5E6',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^18.2.0/",
+    "react/": "https://aistudiocdn.com/react@^18.2.0/",
+    "react": "https://aistudiocdn.com/react@^18.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-cream">
+    <nav class="bg-brand-brown text-white p-2 shadow-md">
+      <div class="container mx-auto flex justify-center items-center space-x-4">
+        <a href="index.html" class="py-2 px-3 hover:bg-yellow-600 hover:text-brand-brown rounded-md transition-colors">Área do Motorista</a>
+        <span class="font-bold py-2 px-3 bg-brand-yellow text-brand-brown rounded-md">Área do Cliente</span>
+      </div>
+    </nav>
+    <div id="root"></div>
+    <script type="module" src="/client.tsx"></script>
+  </body>
+</html>

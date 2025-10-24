@@ -1,0 +1,5 @@
+{
+  "name": "Gestor de Rotas de Ovos",
+  "description": "Uma aplicação web para gerir rotas de entrega de ovos, com uma interface para clientes fazerem pedidos e outra para motoristas gerenciarem as entregas.",
+  "requestFramePermissions": []
+}
